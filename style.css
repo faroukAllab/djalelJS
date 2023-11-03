@@ -415,6 +415,7 @@ display: none;
     grid-row: span 4;
 }
 .divs{
+    width: 100%;
     display: flex;
     justify-content:flex-end;
     align-items: center;
@@ -427,6 +428,8 @@ display: none;
 
 .select-item{
     /* appearance: none; */
+    
+    /* max-width:90%; */
   box-sizing : border-box;
   border: 1px solid whitesmoke;
   border-radius: 5px;
@@ -512,6 +515,9 @@ display: none;
 
 
 @media (max-width:900px){
+    .select-item{
+        width:100%;
+    }
     .form{
         
         background: url('./images/bg1.png') no-repeat;
@@ -522,27 +528,39 @@ display: none;
         grid-auto-flow: row;
 
     }
+    .formula>*>*{
+        width:100%;
+    }
     .c{
         overflow-y: scroll;
+        
     }
     .divs{
         justify-content:start;
         align-items: center;
         text-align: start;
+        width:100%;
+        
     }
     .divs > * {
         flex-basis: 100%;
     }
     .reservation-title{
-        font-size: 2.5rem;
+        font-size: 9vw;
         margin: 5% 0;
     
     }
+    
     .sub{
         margin:2rem 3rem  ;
     }
     .radio-field{
+        width: 100%;
         margin: 5% 0;
+
+    }
+    .rad{
+        margin-top: 20px;
     }
 }
     
@@ -759,13 +777,14 @@ input[type="range"] {
         text-align: left;
     }  
     datalist {
-        width: 21.2rem;
+        width: 90%;
         margin: 0 0 0 1rem;
+        font-size: small;
       }
       
     input[type="range"] {
         margin: 1rem 0.2rem 0 1.2rem;
-        width: 20.8rem;
+        width: 88%;
       }
       .soutenance{
         justify-content: center;}
