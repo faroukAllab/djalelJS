@@ -794,7 +794,13 @@ input[type="range"] {
         
     }
     .fees{
-        gap: 1rem;
+        gap: 0rem;
+      }
+      .fees H1{
+        font-size: 2rem;
+      }
+      .fees p{
+        width: 30%;
       }
     .end-reservation{
         margin: 5%;
