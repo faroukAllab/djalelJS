@@ -1,0 +1,804 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Alice&family=Forum&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Playfair Display', serif; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    text-decoration: none;
+    
+}
+
+/* navigation bark here  */
+header{
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 2%;
+    position: fixed;
+    z-index: 100;
+    width: 100% ;
+    height: 5rem;
+    backdrop-filter: blur(30px);
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.navigation{
+    color:#D6CC99;
+    font-family: 'Alice', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1rem 0.8rem;
+    transition: .5s;
+
+}
+.a{
+    color:#D6CC99;
+    font-family: 'Alice', serif;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+.navigation:hover{
+    color: #445D48;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+#menu-icon{
+    font-size: 3rem;
+    color: #D6CC99;
+    cursor: pointer;
+    display: none;
+
+}
+.logo{
+    margin-right: 15%;
+}
+
+:root{
+    --image: url('./images/bg1.png');
+    -one: #1b1b1b;
+    -two: #445D48;
+    -three: #D6CC99;
+    -four: #FDE5D4;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background: #1b1b1b;
+    color: #D6CC99;
+    text-align: center;
+}
+.me{
+    height: 4rem;
+}
+
+/* home design  */
+
+section{
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 5rem 5% 0;
+    scroll-snap-align: start;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('./images/wwwwwwwblurwithedit.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-position-y: 5rem;
+    transition: all 1s ease-in-out;
+}
+
+.home:hover{
+    background: url('./images/wwwwwwwwithedit.jpg') no-repeat ;
+    background-size:cover;
+    background-position: center;
+    background-position-y: 5rem;
+    transition:all 1s ease-in-out;
+} 
+.home-title{
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #d8d8d8;
+    text-shadow: 3px 3px 5px black;
+
+}   
+@media screen and (max-width: 900px){
+    html, body {
+        overflow-x: hidden;
+        }
+    .home{
+        background-size:cover ;
+        background-position-y: 5rem;
+        
+    }
+    .home:hover{
+        background-size: cover;
+        background-position-y: 5rem;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        z-index: 20;
+        top:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        left:-100%;
+        width: 100%;
+        padding: 1rem 4%; 
+        background-color: rgb(0, 0, 0, 0.6);
+        backdrop-filter: blur(30px);
+        box-shadow: 0.5rem 0.6rem 10px rgb(0, 0, 0, 0.5);
+        transition: 0.3s ease;
+    }
+    .down{
+        left: 0;
+    }
+    .logo{
+        margin-right: -15%;
+    }
+    .home-title{
+        font-size: 3rem;
+        padding: 5%;
+        font-weight: 900;
+    
+    } 
+    .a{
+        margin: 0 0.3rem;
+        transition: .5s;
+        font-size: 1.5rem;
+    }
+}
+
+.red{
+    color: gold;
+    text-shadow: 3px 3px 5px black;
+}
+.home-content{
+    max-width: 60rem ;
+    margin-bottom: 100px;
+
+}
+.animatetxt p{
+    font-weight: 300;
+    color: gold;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin: 2%;
+    text-shadow: 5px 3px 1px black;
+
+}
+
+.btn{
+    position: fixed;
+    line-height: 0cm;
+    z-index: 100;
+    margin: 3%;
+    padding: 15px;
+    font-size: 1.6rem;
+    background-color: #FDE5D4;
+    color: #1b1b1b;
+    border-radius: 100%;
+    border: 3px solid #FDE5D4;
+    right: 0px;
+    bottom: 0px;
+    overflow:hidden;
+    
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background: #1b1b1b;
+    border-radius: 100%;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    transition: .5s;
+
+}
+.btn:hover:before{
+    height: 100%;
+    width: 100%;
+
+}
+.btn:hover{
+    color: #FDE5D4;
+}
+
+
+/* design of portfolio */
+
+.portfolio-title{
+    margin:1% 5% 0 ;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #1b1b1b;
+    text-align: start;
+}
+.artboard{
+    font-family: 'Spectral SC', serif;
+    position: relative;
+    display: inline-block;
+    margin-top:1rem;
+    padding: 2% 2% 2% 0;
+    width: 80%;
+    height: 80vh;
+    background-color: #d8d8d8;
+    box-shadow: 5px 5px 50px black;
+    border-radius: 20px;
+    overflow-x: visible;
+}
+.container{
+    position: relative;
+    bottom: -10%;
+    left: 0;
+    width: 100vw;
+    height: 80%;
+    display:flex;
+    flex-direction: row;
+    gap: 3rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 40px;
+    overscroll-behavior-x: contain;
+    
+}
+.container::-webkit-scrollbar {
+display: none;
+}
+.item{
+    scroll-snap-align:start;
+    scroll-padding: 40px;
+    padding: 1px;
+    flex-shrink: 0;
+}
+.item-end{
+    width: 500px;
+}
+.item-s{
+    width:100px;
+}
+.item > img{
+    
+    object-fit: cover;
+    border-radius: 5px;
+    height: 100%;
+    
+    
+}
+@media screen and (max-width: 900px){
+    .artboard{
+       
+        padding: 3% 0 2% 0;
+        width: 100%;
+        height: 430px;
+        top: 60px;
+        border-radius: 15px;
+    }
+    .container{
+        position: relative;
+        bottom: 0;
+        margin: 5% 0;
+        left: 0;
+        width: 100vw;
+        height: 280px;
+        display:flex;
+        flex-direction: row;
+        gap: 3rem;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 10px;
+        overscroll-behavior-x: contain;
+        
+    }
+    .item-s{
+        width:30px;
+    }
+    .portfolio-title{
+        margin:5% 0 0 5% ;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #1b1b1b;
+        text-align: start;
+    }
+
+}
+
+/* resevation section */
+
+.reservation{
+    background-color: #1b1b1b;
+    padding: 5.2rem 1% 1%;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size : 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.reservation-title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: start;
+
+}
+.container-rev{
+    display: flex;
+    overflow-x: hidden;
+    gap: 5rem;
+    justify-content: start;
+    scroll-snap-type: x mandatory;  
+    overscroll-behavior-x: contain;
+
+}
+.container-rev::-webkit-scrollbar {
+    display: none; }
+
+    .form{
+        background: url('./images/bg1.png') no-repeat;
+        background-size: 700px;
+        background-position-y: -200px;
+        background-position-x: 960px;
+    }
+
+.c{
+    scroll-snap-align:start;
+    flex-shrink: 0;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    width: 100%;
+    height:86vh;
+    padding: 1% 3% ;
+}
+
+.date{
+  appearance : none;
+  box-sizing : border-box;
+  border: 0;
+  border-bottom : 1px solid whitesmoke;
+  background : transparent;
+  font-size : 1.2rem;
+  font-family: 'Lexend Exa', sans-serif;
+  font-weight: 100;
+  padding: 5px 5px 5px 10px;
+  margin: 1rem 0 1rem 1rem;
+  outline: 0;
+  color: whitesmoke;
+}
+.date::-webkit-datetime-edit-text {padding: 0 3px;}
+.date::-webkit-inner-spin-button { display: none; }
+.date::-webkit-calendar-picker-indicator { 
+    cursor: pointer;
+    font-size: 1.4rem ;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: whitesmoke;}
+  
+.time{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+.formula{
+    max-width: 950px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: start;
+    column-gap: 1rem;
+}
+
+.grid-span-2{
+    grid-row: span 2;
+}
+.grid-span-3{
+    grid-row: span 3;
+}
+.grid-span-4{
+    grid-row: span 4;
+}
+.divs{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    text-align: end;
+    flex-wrap: wrap;
+}
+.divs > * {
+    flex: 1;
+}
+
+.select-item{
+    /* appearance: none; */
+  box-sizing : border-box;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background : transparent;
+  font-size : 1.2rem;
+  font-family: 'Lexend Exa', sans-serif;
+  font-weight: 200;
+  padding: 5px 5px 5px 10px;
+  margin: 1rem 0 1rem 1rem;
+  outline: 0;
+  color: whitesmoke;
+
+}
+.select-item > * > * {
+    background-color: #1b1b1b;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.select-item > *{
+    background-color: #1b1b1b;
+    font-size: 1.1rem;
+}
+
+.radio-field{
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: start;
+  appearance: none;
+  text-align: start;
+  box-sizing : border-box;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background : transparent;
+  font-size : 1.2rem;
+  font-family: 'Lexend Exa', sans-serif;
+  font-weight: 200;
+  padding: 5px 5px 5px 10px;
+  margin: 1rem 0 1rem 2rem;
+  outline: 0;
+  color: whitesmoke;
+}
+.radio-field legend{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+
+}
+.radio-field div{
+    margin-left: 10px ;
+}
+
+.rad{
+    margin-right: 12px;
+    transform: scale(1.3);
+    cursor: pointer;
+    background: #445D48;
+}
+
+.sub{
+    display: block;
+    padding: 1rem 2rem;
+    font-family: 'Lexend Exa', sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+    background-color: #090909;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 0 5rem 0 7rem;
+    transition: 0.3s ease-in-out;
+    
+}
+.sub:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+.cc{
+    text-align: end;
+}
+
+
+@media (max-width:900px){
+    .form{
+        
+        background: url('./images/bg1.png') no-repeat;
+        background-size: 50%;
+        background-position: top -10%  right -30%;
+    }
+    .formula{
+        grid-auto-flow: row;
+
+    }
+    .c{
+        overflow-y: scroll;
+    }
+    .divs{
+        justify-content:start;
+        align-items: center;
+        text-align: start;
+    }
+    .divs > * {
+        flex-basis: 100%;
+    }
+    .reservation-title{
+        font-size: 2.5rem;
+        margin: 5% 0;
+    
+    }
+    .sub{
+        margin:2rem 3rem  ;
+    }
+    .radio-field{
+        margin: 5% 0;
+    }
+}
+    
+
+/* the prcing page design */
+.backtitle{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.back{
+    height: min-content;
+    position: relative;
+    z-index: 1;
+    padding: 4px 5px 0px 5px;
+    font-size: 1.3rem;
+    background-color: #FDE5D4;
+    color: #1b1b1b;
+    border-radius: 100%;
+    border: 2px solid #FDE5D4;
+    
+
+}
+
+.back::before{
+    content: "";
+    position: absolute;
+    background: #1b1b1b;
+    border-radius: 100%;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    transition: .5s;
+
+}
+.back:hover:before{
+    height: 100%;
+    width: 100%;
+
+}
+.back:hover{
+    color: #FDE5D4;
+}
+
+
+.plan{
+    background: url("/images/planback.jpg") no-repeat ;
+    background-size: cover;
+    background-position: top left;
+    
+}
+.cards{
+
+    margin: 0.5rem 4%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    text-align: left;
+}
+.card{
+    border: 0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #2b2b2b;
+}
+.card h1{
+    font-family: 'Lexend Exa', sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    color: gold;
+}
+.card ul{
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300; 
+    font-size: 1.2rem;
+    
+}
+.card ul>*{
+    margin-top: 0.8rem;
+    vertical-align:text-top;
+}
+.card button{
+    padding: 0.6rem 2rem;
+    font-family: 'Lexend Exa', sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: #090909;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.card button:hover{
+ background-color: gold;
+ color: black;
+
+}
+.choose{
+    text-align: center;
+    
+}
+
+.Budget h1{
+    color: #ffffffbe;
+}
+.Budget button:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+.Premium{
+    background-color: #000000;
+}
+.Premium button, .Ultimate button{
+    border: 1px solid gold;
+    color: gold;
+}
+
+datalist {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    width: 25.4rem;
+    padding: 0;
+    margin: 0 0 0 1rem;
+  }
+  
+  /*********** Baseline, reset styles ***********/
+input[type="range"] {
+    margin: 0 0.4rem 0 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 24.6rem;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #000000;
+    border-radius: 3px;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -20px; /* Centers thumb on the track */
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 0.8rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #f5f5f5;
+    outline-offset: 0.125rem;
+  }
+
+  .soutenance{
+    gap: 2rem;
+    max-width: 1800px;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: start;
+    
+  }
+
+  .important{
+    width: 100%;
+    padding: 2%;
+    margin: 0 ;
+    border-radius: 5px;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: start;
+  }
+  .fees{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3rem;
+  }
+  .fees H1{
+    font-size: 3rem;
+    font-family: 'Lexend Exa', sans-serif;
+    font-weight: 200;
+    color: gold;
+  }
+
+
+@media (max-width:900px){
+    .cards{
+        margin: 0.5rem 1rem;
+        display: grid;
+        grid-auto-flow: row;
+        gap: 2rem;
+        text-align: left;
+    }  
+    datalist {
+        width: 21.2rem;
+        margin: 0 0 0 1rem;
+      }
+      
+    input[type="range"] {
+        margin: 1rem 0.2rem 0 1.2rem;
+        width: 20.8rem;
+      }
+      .soutenance{
+        justify-content: center;}
+    .st-rad{
+        margin: 0;
+        grid-row: span 2;
+        
+    }
+    .fees{
+        gap: 1rem;
+      }
+    .end-reservation{
+        margin: 5%;
+    }
+    .cc{
+        text-align: center;
+    }
+    .sub{
+        margin: 5% 0;
+    }
+
+
+}
+
+.off{
+    display: none;
+}
+/* 
+font-family: 'Alice', serif;
+font-family: 'Forum', serif;
+font-family: 'Lexend Exa', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Spectral SC', serif; */

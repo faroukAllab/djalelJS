@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>djalel eddine photography resevation website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+    <a class="navigation" href="#home">Home</a>
+    <a class="navigation" href="#portfolio">Portfolio</a>
+    <a class="navigation" href="#makeResId">Reservation</a>
+    <a class="navigation" href="">contact</a>
+    </nav>
+    <div class='bx bx-menu' id="menu-icon"></div>
+    <a class= "logo" href=""><img class="me" src="./images/lgo.PNG" alt="djalel"></a>
+    <nav>
+        <a class=" a" href="https://www.instagram.com/djalel_photography/"><i class='bx bxl-instagram-alt bx-flashing'></i></a>
+        <a class=" a" href=""><i class='bx bxl-facebook-circle'></i></a>
+        <a class=" a" href=""><i class='bx bxl-telegram'></i></a>
+    </nav>
+    </header>
+<section class="home" id="home">
+    <div class="home-content">
+        <div class="animatetxt">
+            <p>we keep your memoires </p> 
+        </div>
+        <h1 class="home-title">Djalel Eddine <span class="red">photography</span> services</h1>
+    
+    
+        
+    
+</div>
+<a href="tel:0697392705" class="btn"><i class='bx bx-phone bx-tada'></i></a>
+</section>
+<section class="portfolio" id="portfolio">
+
+<div class="artboard">
+    <h2 class="portfolio-title">RECENT WORK</h2>
+<div class="container">
+<div class="item-s item"></div>
+<div class="item"><img src="https://picsum.photos/3311/2055"></img></div>
+<div class="item"><img src="https://picsum.photos/511/455"></img></div>
+<div class="item"><img src="https://picsum.photos/611/455"></img></div>
+<div class="item"><img src="https://picsum.photos/811/455"></img></div>
+<div class="item"><img src="https://picsum.photos/311/455"></img></div>
+<div class="item"><img src="https://picsum.photos/211/455"></img></div>
+<div class="item"><img src="https://picsum.photos/511/455"></img></div>
+<div class="item"><img src="https://picsum.photos/711/455"></img></div>
+<div class="item"><img src="https://picsum.photos/611/455"></img></div>
+<div class="item"><img src="https://picsum.photos/811/455"></img></div>
+<div class="item"><img src="https://picsum.photos/1111/455"></img></div>
+<div class="item-end item"></div>
+</div>
+</div>
+</section>
+
+<section class="reservation" id="reservation">
+    <div class="container-rev">
+        <div class="form c" id="makeResId">
+            <h1 class="reservation-title">Make a Reservation</h1>
+                <form class="formula" action="" method="post">
+                   <div class="divs"><p>Select a Date : </p> <input class="date" type="date"name="" id=""></div>
+                   <div class="divs"><p>Event Time : </p> <input class="time date" type="time" name="" id=""></div>
+                   <div class="divs"><p>Event Type : </p> <select class="select-item" name="" id="eventype"  onchange="eventChange()">
+                    <option value="" selected disabled hidden>Choose event here</option>
+                    <optgroup label="wedding">
+                        <option class="dd" value="man wedding" > man wedding</option>
+                        <option value="woman wedding"> woman wedding</option>
+                    </optgroup>
+                    <optgroup label="actes de mariages">
+                        <option value="Man"> Man</option>
+                        <option value="woman"> Woman</option>
+                    </optgroup>
+                    <optgroup label="graduation">
+                        <option value="group"> a group of students</option>
+                        <option value="single"> one student</option>
+                    </optgroup>
+                
+                    
+                        
+                   </select></div>
+                   <div class="divs"><p>Where: </p> <select class="select-item" name="" id="place" onchange="placeChange()">
+                    <option value="" selected disabled hidden>Choose place here</option>
+                    <optgroup label="Skikda">
+                        <option value="Aïn Bouziane"> Aïn Bouziane  </option>
+                        <option value="Aïn Charchar">  Aïn Charchar </option>
+                        <option value="Aïn Kechra">  Aïn Kechra </option>
+                        <option value="Aïn Zouit">  Aïn Zouit </option>
+                        <option value="Azzaba"> Azzaba  </option>
+                        <option value="Bekkouche Lakhdar">  Bekkouche Lakhdar </option>
+                        <option value="Bin El Ouiden">  Bin El Ouiden </option>
+                        <option value="Ben Azzouz"> Ben Azzouz  </option>
+                        <option value="Beni Bechir">  Beni Bechir </option>
+                        <option value="Beni Oulbane">  Beni Oulbane </option>
+                        <option value="Beni Zid">  Beni Zid </option>
+                        <option value="Bouchtata">  Bouchtata </option>
+                        <option value="Cheraia"> Cheraia  </option>
+                        <option value="Collo"> Collo  </option>
+                        <option value="Djendel Saadi Mohamed">  Djendel Saadi Mohamed </option>
+                        <option value="El Ghedir"> El Ghedir  </option>
+                        <option value="El Hadaiek"> El Hadaiek  </option>
+                        <option value="El Harrouch">  El Harrouch </option>
+                        <option value="El Marsa"> El Marsa  </option>
+                        <option value="Emdjez Edchich"> Emdjez Edchich  </option>
+                        <option value="Es Sebt">  Es Sebt </option>
+                        <option value="Filfila">  Filfila </option>
+                        <option value="Hamadi Krouma"> Hamadi Krouma  </option>
+                        <option value="Kanoua"> Kanoua  </option>
+                        <option value="Kerkera"> Kerkera  </option>
+                        <option value="Kheneg Mayoum"> Kheneg Mayoum  </option>
+                        <option value="Oued Zehour"> Oued Zehour  </option>
+                        <option value="Ouldja Boulballout">  Ouldja Boulballout </option>
+                        <option value="Ouled Attia"> Ouled Attia  </option>
+                        <option value="Ouled Hbaba">  Ouled Hbaba </option>
+                        <option value="Oum Toub"> Oum Toub  </option>
+                        <option value="Ramdane Djamel"> Ramdane Djamel  </option>
+                        <option value="Salah Bouchaour"> Salah Bouchaour  </option>
+                        <option value="Sidi Mezghiche"> Sidi Mezghiche  </option>
+                        <option value="Skikda">  Skikda </option>
+                        <option value="Tamalous">  Tamalous </option>
+                        <option value="Zerdaza"> Zerdaza  </option>
+                        <option value="Zitouna">  Zitouna </option>
+                    </optgroup>
+                        <optgroup label="Annaba">
+                            <option value="	Annaba">	Annaba	</option>
+                        <option value="	Berrahal">	Berrahal	</option>
+                        <option value="	El Hadjar">	El Hadjar	</option>
+                        <option value="	Eulma">	Eulma	</option>
+                        <option value="	El Bouni">	El Bouni	</option>
+                        <option value="	Oued El Aneb">	Oued El Aneb	</option>
+                        <option value="	Cheurfa">	Cheurfa 	</option>
+                        <option value="	Seraïdi">	Seraïdi	</option>
+                        <option value="	Aïn Berda">	Aïn Berda	</option>
+                        <option value="	Chetaïbi">	Chetaïbi	</option>
+                        <option value="	Sidi Amar">	Sidi Amar	</option>
+                        <option value="	Treat">	Treat	</option>
+                        </optgroup>
+
+                        <optgroup label="Constantine">
+                        <option value="	Ouled Rahmoun">	Ouled Rahmoun	</option>
+                        <option value="	Ain Abid">	Ain Abid	</option>
+                        <option value="	El Khroub">	El Khroub	</option>
+                        <option value="	Ben Badis">	Ben Badis	</option>
+                        <option value="	Ain Smara">	Ain Smara	</option>
+                        <option value="	Constantine">	Constantine	</option>
+                        <option value="	Ibn Ziad">	Ibn Ziad	</option>
+                        <option value="	Hamma Bouziane">	Hamma Bouziane	</option>
+                        <option value="	Didouche Mourad">	Didouche Mourad	</option>
+                        <option value="	Messaoud Boudjeriou">	Messaoud Boudjeriou	</option>
+                        <option value="	Beni Hamidene">	Beni Hamidene	</option>
+                        <option value="	Zighoud Youcef">	Zighoud Youcef	</option>
+                        </optgroup>
+                   </select></div>
+                   <div class="divs"><p>Held In What : </p> <input class="date" type="text" placeholder="ex:salle des fetes.." name="" id=""></div>
+                   <div class="divs"><p>Full address : </p> <input class="date" type="text" placeholder="ex:rue.." name="" id=""></div>
+                   <div class="divs"><p>Location Link on Google-Maps : </p> <input class="date" type="url" placeholder="link" name="" id=""></div>
+                   
+                   <fieldset class="radio-field grid-span-3">
+                    <legend>Select which team should i bring : </legend>
+                  
+                    <div>
+                      <input class="rad" type="radio" id="men" name="team" value="men" checked />
+                      <label for="men">Men Only</label>
+                    </div>
+                    <div>
+                        <input class="rad" type="radio" id="women" name="team" value="women" />
+                        <label for="women">Women Only</label>
+                      </div>
+                      <div>
+                        <input class="rad" type="radio" id="both" name="team" value="both" />
+                        <label for="both">Men & Women</label>
+                      </div>
+                  </fieldset>
+                  <div></div>
+
+                   <div class="divs cc"><a class="sub" href='#Reservationid'>NEXT</a></div>
+
+                   
+                </form>
+        </div>
+        <div class="plan c" id="Reservationid">
+            <div class="backtitle"><a href="#makeResId" class="back"><i class='bx bx-arrow-back'></i></a>
+            <h1 class="reservation-title">Choose a Plan</h1></div>
+            
+            <div class="packofcards1 off">
+                
+            <div class="cards">
+                <div class="card Budget">
+                    <div> <p>Budget</p> <hr> <H1>25000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Des Photos Illimités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> 100 Photos Imprimées</li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> Photos Traités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> Video (FHD)</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Flash Disque (Videos + Photos)</li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i>Album</li>
+                       <li><i class='bx bx-x bx-sm' style='color:#ee0d0d'  ></i> Drone 4K</li>
+                    </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+            </div>
+                <div class="card Basic">
+                    <div> <p>Basic</p> <hr> <H1>32000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Des Photos Illimités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> 100 Photos Imprimées</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Photos Traités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> Video (FHD)</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Flash Disque (Videos + Photos)</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>Album</li>
+                       <li><i class='bx bx-x bx-sm' style='color:#ee0d0d'  ></i> Drone 4K</li>
+                    </ul>
+                    <div class="choose"><button onclick="window.location.href='#personalId';" type="button"> Choose Plan </button></div>
+                </div>
+                <div class="card Premium">
+                    <div> <p>Premium</p> <hr> <H1>39000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   Des Photos Ilimités.</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   100 + 20 Photos Imprimées</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Photos Traités</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   Video (4K)</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   Flash Disque (Videos + Photos)</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>Album</li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> Drone 4K</li>
+                       </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+                </div>
+                <div class="card Ultimate">
+                    <div> <p>Ultimate</p> <hr> <H1>59000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   Des Photos Ilimités.</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   100 + 20 Photos Imprimées</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Photos Traités</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   Video (4K)</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>   Flash Disque (Videos + Photos)</li>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i>Album</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Drone 4K</li>
+                       </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+                </div>
+            </div>
+        </div>
+        <div class="packofcards2 off">
+            <div class="cards">
+                <div class="card Budget">
+                    <div> <p>Budget</p> <hr> <H1>4000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Des Photos Illimités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> 20 photos traités</li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> photos imprimées </li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> album = 150 elf </li>
+                    </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+            </div>
+                <div class="card Basic">
+                    <div> <p>Basic</p> <hr> <H1>5000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Des Photos Illimités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> 20 photos traités</li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> photos imprimées </li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> album = 150 elf </li>
+                    </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+                </div>
+                <div class="card Premium">
+                    <div> <p>Premium</p> <hr> <H1>6000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Des Photos Illimités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#ffee38'  ></i> 30 photos traités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> photos imprimées </li>
+                       <li><i Class='bx bx-x bx-sm' Style='color:#ee0d0d'  ></i> album = 150 elf </li>
+                    </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+                </div>
+                <div class="card Ultimate">
+                    <div> <p>Ultimate</p> <hr> <H1>7000 DA</H1> </div>
+                    <ul>
+                        <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> Des Photos Illimités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> 40 photos traités</li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> photos imprimées </li>
+                       <li><i Class='bx bx-check bx-sm' Style='color:#139f32'  ></i> album = 150 elf </li>
+                    </ul>
+                    <div class="choose"><button type="button" onclick="window.location.href='#personalId';"> Choose Plan </button></div>
+                </div>
+            </div>
+        </div>
+        <div class="packofcards3 off">
+            <form class="formula soutenance" action="" method="post">
+                <div class="divs"><p>Photos traités : </p> <div><input class="" type="range" min="5" max="50" step="5" list="photonum" name="" id="photot" onchange="rangeChange1(this.value), tretimp()" > 
+                    <datalist id="photonum">
+                        <option value="5" label="05"></option>
+                        <option value="10" label="10"></option>
+                        <option value="15" label="15"></option>
+                        <option value="20" label="20"></option>
+                        <option value="25" label="25"></option>
+                        <option value="30" label="30"></option>
+                        <option value="35" label="35"></option>
+                        <option value="40" label="40"></option>
+                        <option value="45" label="45"></option>
+                        <option value="50" label="50"></option>
+                      </datalist></div>
+                </div>
+                <div class="divs"><p>Photos imprimées : </p> <div><input class="" type="range" min="0" max="50" step="5" list="photonum" name="" id="photoi" onchange="rangeChange2(this.value) , tretimp()"> 
+                    <datalist id="photonum">
+                        <option value="0" label="00"></option>
+                        <option value="5" label="05"></option>
+                        <option value="10" label="10"></option>
+                        <option value="15" label="15"></option>
+                        <option value="20" label="20"></option>
+                        <option value="25" label="25"></option>
+                        <option value="30" label="30"></option>
+                        <option value="35" label="35"></option>
+                        <option value="40" label="40"></option>
+                        <option value="45" label="45"></option>
+                        <option value="50" label="50"></option>
+                      </datalist>
+                </div></div>
+                <fieldset class="radio-field st-rad grid-span-4">
+                    <legend>Videos : </legend>
+                  
+                    <div>
+                      <input class="rad" type="radio" id="none" name="vid" value="none"  checked />
+                      <label for="none">No video</label>
+                    </div>
+                    <div>
+                        <input class="rad" type="radio" id="one" name="vid" value="one" />
+                        <label for="one">one reel 1 min</label>
+                      </div>
+                      <div>
+                        <input class="rad" type="radio" id="two" name="vid" value="two" />
+                        <label for="two">two reels 1 min each</label>
+                      </div>
+                      <div>
+                        <input class="rad" type="checkbox" id="video" name="video" value="video" onclick="videofull()"/>
+                        <label for="video">Video pour toute la soutenance</label>
+                      </div>
+                  </fieldset>
+                  <fieldset class="important grid-span-2">
+                    <div>
+                       <p>* For a precise fee calculation, please make sure that the "Photos imprimées" do not exceed the "Photos traités".</p>  
+                    </div><br>
+                    <div>
+                        <p>* If you require more pictures or can't find the best offer for you, we invite you to call the business owner by clicking on the button on the bottom left of the screen.</p>  
+                     </div>
+                  </fieldset>
+                  <div class="fees"> <p>fees : </p>  <H1 id="feeH1">1000 DA</H1> </div>
+                <div class="divs cc"><a class="sub" href="#personalId">NEXT</a></div>
+                
+             </form>
+     </div>
+        </div>
+        
+        <div class="map c" id="personalId">
+            <div class="backtitle"><a href="#Reservationid" class="back"><i class='bx bx-arrow-back'></i></a>
+                <h1 class="reservation-title">Personal informations</h1></div>
+            
+            <form class="formula end-reservation" action="" method="post">
+               <div class="divs"><p>Name : </p> <input class="date time" type="text"name="" id="" placeholder="ex:Farouk"></div>
+               <div class="divs"><p>Family Name : </p> <input class="time date" type="text" name="" id="" placeholder="ex:Allab"></div>
+               
+               <div class="divs"><p>Phone Number : </p> <input class="date time" type="text" placeholder="ex:0697.." name="" id=""></div>
+               
+              
+
+               <div class="divs cc"><input class="sub" type="submit" value="confirm reservation"></div>
+               <div><h1 class="reservation-title">Thanks !</h1> </div>
+
+            </form>
+    </div>
+    </div>
+
+</section>
+
+    
+
+ <script src="index.js" charset="UTF-8"></script>   
+</body>
+</html>
