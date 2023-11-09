@@ -16,18 +16,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 2%;
+  padding: 0.6rem 2%;
   position: fixed;
   z-index: 100;
   width: 100%;
-  height: 5rem;
+  /* height: 100%; */
   backdrop-filter: blur(30px);
   background-color: rgb(0, 0, 0, 0.3);
 }
 .navigation {
   color: #d6cc99;
   font-family: "Alice", serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin: 1rem 0.8rem;
   transition: 0.5s;
@@ -38,7 +38,7 @@ header {
   font-weight: 500;
   margin: 0 0.8rem;
   transition: 0.5s;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .navigation:hover {
   color: #445d48;
@@ -46,7 +46,7 @@ header {
   text-underline-offset: 8px;
 }
 #menu-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #d6cc99;
   cursor: pointer;
   display: none;
@@ -64,21 +64,36 @@ header {
 }
 html {
   overflow-x: hidden;
+
 }
 body {
   background: #1b1b1b;
   color: #d6cc99;
   text-align: center;
 }
+body::-webkit-scrollbar {
+width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #373737;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  
+  background-color:rgb(0, 85, 0);
+  border-radius: 100px;
+}
 .me {
-  height: 4rem;
+  height: 3.5rem;
 }
 
 /* home design  */
 
 section {
-  min-height: 100vh;
-  max-height: 100vh;
+overflow: hidden;
+  height: 100vh;
   padding: 5rem 5% 0;
   scroll-snap-align: start;
 }
@@ -271,7 +286,7 @@ section {
   .artboard {
     padding: 3% 0 2% 0;
     width: 100%;
-    height: 430px;
+    max-height: 430px;
     top: 60px;
     border-radius: 15px;
   }
@@ -281,7 +296,7 @@ section {
     margin: 5% 0;
     left: 0;
     width: 100vw;
-    height: 280px;
+    max-height: 280px;
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -306,11 +321,13 @@ section {
 
 .reservation {
   background-color: #1b1b1b;
-  padding: 5.2rem 1% 1%;
+  padding: 5rem 1% 1%;
   color: whitesmoke;
   font-weight: 800;
+  height: 99vh;
   font-size: 1.2rem;
   font-family: "Nunito", sans-serif;
+  overflow-y: hidden;
 }
 .reservation-title {
   font-size: 3rem;
@@ -318,12 +335,14 @@ section {
   text-align: start;
 }
 .container-rev {
+  height: 100%;
   display: flex;
   overflow-x: hidden;
-  gap: 5rem;
+  overflow-y: hidden;
+  /* gap: 5rem; */
   justify-content: start;
   scroll-snap-type: x mandatory;
-  overscroll-behavior-x: contain;
+  /* overscroll-behavior-x: contain; */
 }
 .container-rev::-webkit-scrollbar {
   display: none;
@@ -337,13 +356,18 @@ section {
 }
 
 .c {
+  /* overflow-y: scroll; */
   scroll-snap-align: start;
   flex-shrink: 0;
   border: 2px solid whitesmoke;
   border-radius: 15px;
+  overflow-y: scroll;
   width: 100%;
-  height: 86vh;
+  height: 100%;
   padding: 1% 3%;
+}
+.c::-webkit-scrollbar {
+  display: none;
 }
 
 .date {
@@ -588,13 +612,13 @@ section {
 .card {
   border: 0;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.4rem;
   background-color: #2b2b2b;
 }
 .card h1 {
   font-family: "Lexend Exa", sans-serif;
   font-weight: 200;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-align: center;
   margin: 0.5rem 0;
   color: gold;
@@ -606,7 +630,7 @@ section {
   font-size: 1.2rem;
 }
 .card ul > * {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
   vertical-align: text-top;
 }
 .card button {
